@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(../background-login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+nav.menu-lateral{
+    width: 75px;
+    height: 100%;
+    background-color: rgb(121, 50, 4);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(255, 136, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+nav.menu-lateral.expandir-menu{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul.ul-menu{
+    height: 100%;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+ul li.item-menu{
+    transition: 0.2s;
+}
+
+ul li.item-ativo{
+    background-color: rgb(255, 136, 0);
+}
+
+ul li.item-menu:hover{
+    background: rgb(255, 136, 0);
+
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 4%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+ul li.item-menu a .texto-menu{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icone-menu{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.box-login{
+    width: 300px;
+    height: 400px;
+    background-color: #ffffffa1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box-img{
+    display: flex;
+    align-items: center;
+}
+
+.box-login .icone{
+    background-image: url(../boneco.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.box-login label{
+    color: rgb(121, 50, 4);
+}
+
+.box-login h2{
+    color: rgb(121, 50, 4);
+}
+
+.input-single{
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input-default{
+    width: 100%;
+    background: transparent;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 136, 0);
+    font-size: 17px;
+}
+
+form .input-single .input-default:focus ~ label,
+form .input-single .input-default:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 14px;
+    color: rgb(121, 50, 4);
+}
+
+.box-login input[type='submit']{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(255, 136, 0);
+    color: floralwhite;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.box-login input[type='submit']:hover{
+    background-color: floralwhite ;
+    color: rgb(255, 136, 0);  
+    box-shadow: inset 0 0 0 1px rgb(255, 136, 0);
+}
